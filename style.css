@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  background-color: #90afcf; /* Blå baggrund */
+}
+.header {
+  background-color: white;
+  margin: 3px auto; /* Centrerer headeren med margin */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px; /* Runde hjørner *måske
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Blød skygge */
+  max-width: 90%; /* Gør headeren mindre */
+}
+.logo img {
+  height: 60px; /* Juster logoets højde */
+}
+.menu {
+  display: flex;
+  gap: 30px; /* Gør afstand mellem menupunkterne */
+}
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.palette-container {
+  position: relative;
+  width: 400px; /* Juster størrelse efter dit paletbillede */
+  height: 300px;
+  background: url("/img/palette.png") no-repeat center;
+  background-size: contain;
+  border: 1px solid #ccc;
+}
+/* SKAL VÆRE TIL INDHOLDSIDEN */
+.image {
+  position: absolute;
+  width: 50px; /* Standardstørrelse for billeder */
+  height: 50px;
+  transition: transform 0.3s, box-shadow 0.3s; /* Animationseffekt */
+}
+
+.image:hover {
+  transform: scale(3.5); /* Forstør billedet */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Tilføj fremhævet skygge */
+  z-index: 10; /* Sørg for, at det vises øverst */
+}
+/* Positioner billeder hvor som helst på paletten */
+.image1 {
+  top: 50px;
+  left: 100px;
+  border-radius: 20px;
+}
+.image2 {
+  top: 120px;
+  left: 200px;
+  border-radius: 20px;
+}
+.image3 {
+  top: 200px;
+  left: 150px;
+  border-radius: 20px;
+}
+
+/* FORSIDE */
+
+.grid-1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 30px;
+}
+.potræt {
+  width: 150px;
+}
+.knap {
+  background-color: black;
+  color: #35a790;
+  border-radius: 10%;
+  border: none;
+  padding: 10px 20px;
+}
+
+.farve-kort-container {
+  display: flex;
+  gap: 20px; /* Afstand mellem kort */
+  flex-wrap: wrap; /* Sørger for, at kort ikke overlapper ved mindre skærmstørrelse */
+  justify-content: center;
+  align-items: center;
+}
+.farve-kort {
+  width: 200px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.farve-kort:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+.lilla {
+  display: flex;
+  gap: 20px;
+  width: 150px;
+  height: 200px;
+  /* border: 2px solid #fff; */
+  border-radius: 8px;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.grå {
+  display: flex;
+  gap: 20px;
+  width: 150px;
+  height: 200px;
+  /* border: 2px solid #fff; */
+  border-radius: 8px;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.blå {
+  display: flex;
+  gap: 20px;
+  width: 150px;
+  height: 200px;
+  /* border: 2px solid #fff; */
+  border-radius: 8px;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.rød {
+  display: flex;
+  gap: 20px;
+  width: 150px;
+  height: 200px;
+  /* border: 2px solid #fff; */
+  border-radius: 8px;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
