@@ -1,6 +1,21 @@
-body {
+/************** Reset ********************/
+* {
   margin: 0;
-  background-color: #90afcf; /* Blå baggrund */
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0px;
+}
+body {
+  margin: 40px;
+  background-color: #d1def0; /* Blå baggrund */
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .header {
   background-color: white;
@@ -69,14 +84,34 @@ body {
 }
 
 /* FORSIDE */
+@media (max-width: 800px) {
+  .grid-1_1 {
+    margin: 10px;
+  }
 
+  .potræt {
+    width: 160px;
+    margin-left: 10px;
+  }
+  .farve-kort-container {
+    /* grid-template-columns: 1fr; */
+    /* position: absolute; */
+    gap: 80px;
+    margin: 40px;
+  }
+}
+h1 {
+  padding: 50px;
+}
 .grid-1_1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 30px;
+  padding: 50px;
 }
 .potræt {
-  width: 150px;
+  width: 160px;
+  margin: auto;
 }
 .knap {
   background-color: black;
@@ -111,6 +146,7 @@ body {
   gap: 20px;
   width: 150px;
   height: 200px;
+  padding: 60px;
   /* border: 2px solid #fff; */
   border-radius: 8px;
   align-items: center;
