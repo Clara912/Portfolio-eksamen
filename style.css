@@ -17,6 +17,18 @@ body {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+main {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+p {
+  margin-bottom: 50px;
+}
+
+.center {
+  text-align: center;
+}
+
 .header {
   background-color: white;
   margin: 3px auto; /* Centrerer headeren med margin */
@@ -26,7 +38,7 @@ body {
   justify-content: space-between;
   border-radius: 10px; /* Runde hjørner *måske
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Blød skygge */
-  max-width: 90%; /* Gør headeren mindre */
+  /* max-width: 90%; Gør headeren mindre */
 }
 .logo img {
   height: 60px; /* Juster logoets højde */
@@ -49,9 +61,8 @@ body {
   position: relative;
   width: 400px; /* Juster størrelse efter dit paletbillede */
   height: 300px;
-  background: url("/img/palette.png") no-repeat center;
+  background: url("/img/Artboard\ 10_result.webp") no-repeat center;
   background-size: contain;
-  border: 1px solid #ccc;
 }
 /* SKAL VÆRE TIL INDHOLDSIDEN */
 .image {
@@ -82,112 +93,57 @@ body {
   left: 150px;
   border-radius: 20px;
 }
-
+.potræt {
+  width: 160px;
+  margin-left: 10px;
+}
+#meet_me {
+  margin-bottom: 50px;
+}
 /* FORSIDE */
-@media (max-width: 800px) {
-  .grid-1_1 {
-    margin: 10px;
-  }
 
-  .potræt {
-    width: 160px;
-    margin-left: 10px;
-  }
-  .farve-kort-container {
-    /* grid-template-columns: 1fr; */
-    /* position: absolute; */
-    gap: 80px;
-    margin: 40px;
-  }
-}
 h1 {
-  padding: 50px;
+  padding: 50px 0px;
 }
-.grid-1_1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 30px;
-  padding: 50px;
-}
+
 .potræt {
   width: 160px;
   margin: auto;
 }
 .knap {
   background-color: black;
-  color: #35a790;
-  border-radius: 10%;
+  color: #ffffff;
+  border-radius: 15px;
   border: none;
   padding: 10px 20px;
 }
 
-.farve-kort-container {
-  display: flex;
-  gap: 20px; /* Afstand mellem kort */
-  flex-wrap: wrap; /* Sørger for, at kort ikke overlapper ved mindre skærmstørrelse */
-  justify-content: center;
-  align-items: center;
-}
 .farve-kort {
   width: 200px;
-  height: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: transform 0.3s, box-shadow 0.3s;
+  margin: 20px auto;
 }
 
 .farve-kort:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
 }
-.lilla {
-  display: flex;
-  gap: 20px;
-  width: 150px;
-  height: 200px;
-  padding: 60px;
-  /* border: 2px solid #fff; */
-  border-radius: 8px;
-  align-items: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-.grå {
-  display: flex;
-  gap: 20px;
-  width: 150px;
-  height: 200px;
-  /* border: 2px solid #fff; */
-  border-radius: 8px;
-  align-items: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
 
-.blå {
-  display: flex;
-  gap: 20px;
-  width: 150px;
-  height: 200px;
-  /* border: 2px solid #fff; */
-  border-radius: 8px;
-  align-items: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+.red {
+  background-color: red;
+  padding: 5px;
 }
-.rød {
-  display: flex;
-  gap: 20px;
-  width: 150px;
-  height: 200px;
-  /* border: 2px solid #fff; */
-  border-radius: 8px;
-  align-items: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+.red-white {
+  border: 5px solid white;
+  margin: 4px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+/* desktop KUN */
+@media (min-width: 800px) {
+  .farve-kort {
+    width: 85%;
+  }
 }
