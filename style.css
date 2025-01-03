@@ -130,16 +130,28 @@ h1 {
 }
 
 .red {
-  background-color: red;
+  background-color: #8c2e2f;
   padding: 5px;
 }
 .red-white {
   border: 5px solid white;
   margin: 4px;
 }
+.grey {
+  background-color: aqua;
+  padding: 5px;
+}
+.grey-white {
+  border: 5px solid white;
+  margin: 4px;
+}
 a {
   color: black;
   text-decoration: none;
+}
+.indholdbillede {
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 /* desktop KUN */

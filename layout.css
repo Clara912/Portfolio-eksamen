@@ -3,6 +3,10 @@
   display: grid;
   grid-template-columns: 1fr;
 }
+.grid-1_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
 
 /* Desktop */
 @media screen and (min-width: 800px) {
