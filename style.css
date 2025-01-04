@@ -138,10 +138,18 @@ h1 {
   margin: 4px;
 }
 .grey {
-  background-color: aqua;
+  background-color: #ded2c6;
   padding: 5px;
 }
 .grey-white {
+  border: 5px solid white;
+  margin: 4px;
+}
+.blue {
+  background-color: #05d5fa;
+  padding: 5px;
+}
+.blue-white {
   border: 5px solid white;
   margin: 4px;
 }
