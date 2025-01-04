@@ -23,6 +23,8 @@ main {
 }
 p {
   margin-bottom: 50px;
+  font-family: "Inria Sans", serif;
+  font-size: medium;
 }
 
 .center {
@@ -30,15 +32,27 @@ p {
 }
 
 .header {
-  background-color: white;
+  background-color: #d1def0;
   margin: 3px auto; /* Centrerer headeren med margin */
   padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 10px; /* Runde hjørner *måske
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Blød skygge */
+  /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); Blød skygge */
   /* max-width: 90%; Gør headeren mindre */
+  border: 6px solid white;
+}
+.coustard-regular {
+  font-family: "Coustard", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inria-sans-light {
+  font-family: "Inria Sans", serif;
+  font-weight: 300;
+  font-style: normal;
 }
 .logo img {
   height: 60px; /* Juster logoets højde */
@@ -104,6 +118,10 @@ p {
 
 h1 {
   padding: 50px 0px;
+  font-family: "Coustard", serif;
+}
+h2 {
+  font-family: "Coustard", serif;
 }
 
 .potræt {
@@ -180,6 +198,13 @@ a {
 /* desktop KUN */
 @media (min-width: 800px) {
   .farve-kort {
-    width: 85%;
+    width: 55%;
+  }
+  .palette-container {
+    margin-top: 25px;
+    margin-left: 70;
+  }
+  h1 {
+    text-align: center;
   }
 }
