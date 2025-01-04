@@ -161,6 +161,14 @@ a {
   padding-top: 5px;
   padding-bottom: 10px;
 }
+.cv {
+  background-color: #8baad1;
+  padding: 5px;
+}
+.cv-white {
+  border: 5px solid white;
+  margin: 4px;
+}
 
 /* desktop KUN */
 @media (min-width: 800px) {
