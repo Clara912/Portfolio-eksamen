@@ -22,7 +22,7 @@ main {
   margin: 0 auto;
 }
 p {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   font-family: "Inria Sans", serif;
   font-size: large;
   line-height: 1.5;
@@ -182,9 +182,20 @@ a {
   color: black;
   text-decoration: none;
 }
-.indholdbillede {
+/* billede link  */
+.web {
   padding-top: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
+}
+.uxbillede {
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.indholdbillede {
+  padding-bottom: 15px;
+}
+.spil {
+  padding-bottom: 15px;
 }
 .cv {
   background-color: #8baad1;
@@ -201,6 +212,15 @@ a {
 .purpele-white {
   border: 5px solid white;
 }
+.værktøjer {
+  padding: 5px;
+  font-size: medium;
+}
+.proces {
+  padding: 5px;
+  font-size: medium;
+  padding-bottom: 8px;
+}
 
 /* desktop KUN */
 @media (min-width: 800px) {
@@ -213,5 +233,11 @@ a {
   }
   h1 {
     text-align: center;
+  }
+  .værktøjer {
+    font-size: 25px;
+  }
+  .proces {
+    font-size: 25px;
   }
 }
