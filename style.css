@@ -32,7 +32,9 @@ li {
   font-size: medium;
   line-height: 1.3;
 }
-
+ul {
+  padding-left: 27px;
+}
 .center {
   text-align: center;
 }
@@ -48,6 +50,23 @@ li {
   /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); Blød skygge */
   /* max-width: 90%; Gør headeren mindre */
   border: 6px solid white;
+  z-index: 12;
+}
+footer {
+  /* background-color: #d1def0; */
+  border: 6px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+.footer.item {
+  color: black;
+  font-family: "Inria Sans", serif;
+  flex-direction: column;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
 }
 .coustard-regular {
   font-family: "Coustard", serif;
@@ -87,13 +106,13 @@ li {
 /* SKAL VÆRE TIL INDHOLDSIDEN */
 .image {
   position: absolute;
-  width: 50px; /* Standardstørrelse for billeder */
-  height: 50px;
+  width: 80px; /* Standardstørrelse for billeder */
+  height: 80px;
   transition: transform 0.3s, box-shadow 0.3s; /* Animationseffekt */
 }
 
 .image:hover {
-  transform: scale(3.5); /* Forstør billedet */
+  transform: scale(3.5); /* Forstør billedet når mussen holdes oveer */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Tilføj fremhævet skygge */
   z-index: 10; /* Sørg for, at det vises øverst */
 }
@@ -102,16 +121,32 @@ li {
   top: 50px;
   left: 100px;
   border-radius: 20px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 .image2 {
-  top: 120px;
-  left: 200px;
+  top: 107px;
+  left: 194px;
   border-radius: 20px;
 }
 .image3 {
   top: 200px;
   left: 150px;
   border-radius: 20px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.image4 {
+  top: 9px;
+  left: 230px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.image5 {
+  top: 156px;
+  left: 41px;
+  border-radius: 20px;
+  object-fit: cover;
 }
 .potræt {
   width: 160px;
@@ -130,10 +165,14 @@ h2 {
   font-family: "Coustard", serif;
   padding-bottom: 20px;
 }
-
-.potræt {
-  width: 160px;
+.portræt {
+  width: 400px;
+  padding-bottom: 20px;
+}
+.forside {
+  width: 400px;
   margin: auto;
+  padding: 5px;
 }
 .knap {
   background-color: black;
@@ -221,6 +260,93 @@ a {
   font-size: medium;
   padding-bottom: 8px;
 }
+.h2projekter {
+  text-align: center;
+}
+.box {
+  width: 400px;
+  height: 200px;
+  background-color: #8baad1;
+  text-align: center;
+  font-size: small;
+  font-family: "Inria Sans", serif;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+.punkt {
+  list-style-type: none;
+}
+.underpunkt {
+  list-style-position: inside;
+  line-height: 1.4;
+  padding-bottom: 5px;
+}
+/* nav bar  */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #6f6b6b;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: #333333;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
 
 /* desktop KUN */
 @media (min-width: 800px) {
@@ -239,5 +365,55 @@ a {
   }
   .proces {
     font-size: 25px;
+  }
+  .box {
+    margin: auto;
+  }
+  image:hover {
+    transform: scale(5.5); /* Forstør billedet når mussen holdes oveer */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Tilføj fremhævet skygge */
+    z-index: 10; /* Sørg for, at det vises øverst */
+  }
+}
+/* nav bar  */
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #ffffff;
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
   }
 }
