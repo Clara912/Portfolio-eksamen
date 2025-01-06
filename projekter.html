@@ -11,6 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23d1def0%22></rect><path fill=%22%238c2e2f%22 d=%22M72.23 27.72L72.23 27.72Q72.23 29.04 71.43 29.98Q70.63 30.92 69.60 31.39L69.60 31.39Q67.16 29.70 63.86 28.19Q60.58 26.69 55.31 26.69L55.31 26.69Q50.99 26.69 47.32 28.19Q43.66 29.70 40.93 32.61Q38.20 35.52 36.65 39.94Q35.10 44.36 35.10 50.09L35.10 50.09Q35.10 55.92 36.61 60.25Q38.11 64.57 40.79 67.48Q43.47 70.40 47.23 71.86Q50.99 73.31 55.59 73.31L55.59 73.31Q60.48 73.31 64.10 71.95Q67.72 70.59 70.16 68.71L70.16 68.71Q71.10 69.08 71.95 70.07Q72.80 71.06 72.80 72.37L72.80 72.37Q72.80 74.35 70.54 75.94L70.54 75.94Q68.38 77.45 64.62 78.62Q60.86 79.80 55.03 79.80L55.03 79.80Q49.11 79.80 44.03 77.92Q38.95 76.04 35.24 72.33Q31.53 68.61 29.37 63.07Q27.21 57.52 27.21 50.09L27.21 50.09Q27.21 42.67 29.41 37.08Q31.62 31.48 35.38 27.72Q39.14 23.96 44.17 22.08Q49.20 20.20 54.75 20.20L54.75 20.20Q58.60 20.20 61.84 20.86Q65.09 21.52 67.39 22.60Q69.69 23.68 70.96 25.04Q72.23 26.41 72.23 27.72Z%22></path></svg>"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -18,10 +24,17 @@
       <div class="logo">
         <a href="index.html">CLARA ARILD</a>
       </div>
-      <nav class="menu">
-        <a href="index.html">FORSIDE</a>
-        <a href="projekter.html">PROJEKTER</a>
-        <a href="om_mig.html">OM MIG</a>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">FORSIDEN</a></li>
+          <li><a href="projekter.html">PROJEKTER</a></li>
+          <li><a href="om_mig.html">OM MIG</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
       </nav>
     </header>
     <main>
@@ -42,5 +55,13 @@
         </div>
       </div>
     </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer.item">tekst</div>
+        <div class="footer.item">tekst</div>
+        <div class="footer.item">tekst</div>
+      </div>
+    </footer>
+    <script src="menu.js"></script>
   </body>
 </html>
